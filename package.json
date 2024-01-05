@@ -4,7 +4,8 @@
   "description": "Ma première application de cuisine 2024",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Bertrand Devy",
   "license": "ISC",
