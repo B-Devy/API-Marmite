@@ -1,0 +1,43 @@
+
+
+
+model de recette:
+new Recette = {
+    titre:
+    image:
+    ingredients: []
+    nbrePers:
+    temps:
+    difficulte:
+    etape: 
+}
+
+{
+    titre: "Boeuf bourguignon"
+    image: "superbbf.jpg"
+    ingredients: ["sel & poivre", "2x cuillière defarine", "2x oignon", "60cl de vin rouge", "50g de beurre", "100g de lardons", "800g de boeuf", "1 gousse d'ail", "1x bouquet garni", "250g de champignons de Paris"]
+    nbrePers: 6
+    temps: "1h10"
+    difficulte: "Facile"
+    cout: "Moyen"
+    etape: [
+"Hacher les oignons. Peler l'ail.",
+"Dans une cocotte minute, faire roussir la viande et les lardons dans l’huile ou le beurre.",
+"Ajouter les oignons, les champignons égouttés et saupoudrer de fariner. Mélanger et laisser dorer un instant.",
+"Mouiller avec le vin rouge qui doit recouvrir la viande.",
+"Saler et poivrer.",
+"Ajouter l’ail et le bouquet garni.",
+"Fermer la cocotte minute.",
+"Laisser cuire doucement 60 min à partir de la mise en rotation de la soupape"
+]
+}
+
+
+
+
+
+
+
+
+
+
