@@ -7,7 +7,16 @@ const recette = require('./src/models/recette');
 const app = express();
 const port = process.env.PORT || 3000;
 
-connectDb().catch(err => console.log(err));
+//connectDb().catch(err => console.log(err));
+
+connectDb()
+    .then(app.listen(port, () => {
+        console.log(`Le serveur est lancé à http://localhost:${port}`);
+    }))
+    .catch(err => console.log(err));
+
+
+
 app.use(express.json());  ///--- fondamentale pour echanger les models sous forme json avec mongodb
 
 app.post('/recettes', async (req, res, next) => {
@@ -30,8 +39,8 @@ app.get('/recettes/:id', (req, res, next) => {
         .then(recette => res.status(200).json(recette))
         .catch(error => res.status(404).json({ error }));
 });
-
+/*
 app.listen(port, () => {
     console.log(`Le serveur est lancé à http://localhost:${port}`);
 });
-
+*/
