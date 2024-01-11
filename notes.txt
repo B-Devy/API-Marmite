@@ -1,6 +1,17 @@
+ npm install mongoose-unique-validator@2.0.3
+ car la nouvel version du plugin n'est pas compatible avec mon mongoose 8.0
 
 
 
+------------Email-----------------
+{
+    "email": "MichelineGauthier@gmail.fr",
+    "password": "petitetaupe8795465"
+}
+{
+    "email": "oiseaublanc@hotmail.com",
+    "password": "grueduciel56"
+}
 model de recette:
 new Recette = {
     titre:
@@ -32,6 +43,33 @@ new Recette = {
 ]
 }
 
+{
+    "_id": "659302f4faf7b0c6e34fbee4",
+    "titre": "Pâte à crêpes",
+    "image": "crepes.jpg",
+    "ingredients": [
+        "90g beurre fondu",
+        "75g de sucre en poucre",
+        "3 pincées de sel",
+        "375g de farine tamisée",
+        "6x oeufs",
+        "1l de lait",
+        "rhum grand-marnier"
+    ],
+    "nbrePers": 5,
+    "temps": 10,
+    "difficulte": "Très Facile",
+    "cout": "Faible",
+    "etape": [
+        "Dans un saladier, mélanger la farine, le sel et le sucre.",
+        "Faire une fontaine.",
+        "Ajouter les oeufs et commencer à les incorporer à la farine avec une cuillère en bois, ajouter le beure fondu (tiédi) peu à peu et bien malaxer.",
+        "Incorporer le lait (par petites quantités au début pour éviter les grumeaux), ajouter le parfum.",
+        "Faire cuire les crêpes dans une poêle chaude huilée."
+    ],
+    "categorie": "plat principale",
+    "score": 2.5
+}
 
 
 

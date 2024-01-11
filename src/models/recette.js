@@ -19,7 +19,7 @@ const recetteSchema = mongoose.Schema({
         required: true
     },
     temps: {
-        type: String,
+        type: Number,
         required: true
     },
     difficulte: {
@@ -28,6 +28,14 @@ const recetteSchema = mongoose.Schema({
     },
     cout: {
         type: String,
+        required: true
+    },
+    categorie: {
+        type: String,
+        required: true
+    },
+    score: {
+        type: Number,
         required: true
     },
     etape: {

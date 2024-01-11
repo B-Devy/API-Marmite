@@ -49,6 +49,22 @@ const baseDeDonneesTemp = [
             "Placez sur une plaque au four sous le grill pendant 10 mn."
         ]
     },
+    {
+        titre: "Galette Frangipane",
+        image: "gallete.jpg",
+        ingredients: ["Une pâte feuilletée", "75g de beurre tendre", "100g de sucre", "140g de poudre d'amande", "2x oeufs"],
+        nbrePers: 8,
+        temps: "25 min",
+        difficulte: "Facile",
+        cout: "Bon Marché",
+        etape: [
+            "Mélangez les ingrédients.",
+            "Vous étalez la frangipane sur une pâte feuilletée (que vous aurez piquée avec une fourchette au préalable) jusqu'à 2 cm du bord",
+            "Vous posez une autre pâte feuilletée dessus et refermez les bords.",
+            "Vous badigeonnez le dessus d'un jaune d'oeuf, puis vous tracez avec une pointe, les formes que vous voulez.",
+            "Cuisson : 25 minutes à 200 degrés."
+        ]
+    },
 ]
 
 module.exports = {     ///----Attention bien mettre les "{" sinon undefined !
