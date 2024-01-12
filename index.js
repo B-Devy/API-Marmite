@@ -6,6 +6,7 @@ const userRoutes = require('./src/router/user');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const path = require('path');
 
 //connectDb().catch(err => console.log(err));
 
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 app.use(express.json());  ///--- fondamentale pour echanger les models sous forme json avec mongodb
 app.use('/recettes', stuffRoutes);
 app.use('/auth', userRoutes);
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 /*
 app.get('/recettes', (req, res, next) => {
