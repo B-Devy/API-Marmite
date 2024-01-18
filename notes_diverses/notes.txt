@@ -1,6 +1,8 @@
  npm install mongoose-unique-validator@2.0.3
  car la nouvel version du plugin n'est pas compatible avec mon mongoose 8.0
 
+ module.exports = multer({ storage }).single('image');  //--Très important ! le single('image') designe le name du fromulaire du front-end et fait le pont entre les deux.
+
 https://tan-bright-frog.cyclic.app
 
 ------------Email-----------------

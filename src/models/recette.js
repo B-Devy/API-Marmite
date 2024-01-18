@@ -41,6 +41,12 @@ const recetteSchema = mongoose.Schema({
     etape: {
         type: Array,
         required: true
+    }, 
+    userId: {
+        type: String
+    },
+    imageUrl: {
+        type: String
     }
 }, { collection: 'recettes' })
 

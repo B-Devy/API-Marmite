@@ -1,35 +1,33 @@
 const express = require('express');
+const router = express.Router();
 const fs = require('fs');
 const Recette = require('../models/recette');
 const auth = require('../middlewares/auth');
 const multer = require('../middlewares/multer-config')
-const router = express.Router();
 
 
-router.post('/', /*auth,*/ multer, async (req, res, next) => {
+router.post('/', /*auth,*/ multer, /*async */(req, res, next) => {
     //-------------------
-    //const recetteObj = JSON.parse(req.body);
-    const recetteObj = req.body;
-    console.log(recetteObj);
+    const recetteObj = JSON.parse(req.body.recette);
+    //const recetteObj = req.body;
+    //console.log(recetteObj);
     //delete recetteObj._id;
-    //delete recetteObj._userId;
+    //delete recetteObj.categorie;
+    //console.log(recetteObj);
+
+    
     const recette = new Recette({
         ...recetteObj,
-        userId: req.auth.userId,
-        //imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+        userId: "req.auth.userId",
+        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
     });
     console.log(recette)
+    
 
     recette.save()
         .then(() => { res.status(201).json({message: 'objet enregistré !'}) })
         .catch(error => { res.status(400).json({ error }) })
 
-    /*const recette = new Recette({
-        ...req.body
-      });
-    await recette.save()
-        .then(() => res.status(201).json(recette))
-        .catch(error => res.status(400).json({ error }));*/
 });
 
 router.put('/:id', /*auth,*/ (req, res, next) => {

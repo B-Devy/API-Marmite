@@ -17,4 +17,4 @@ const storage = multer.diskStorage({
     }
 });
 
-module.exports = multer({ storage }).single('image');
+module.exports = multer({ storage }).single('image');  //--Très important ! le single('image') designe le name du fromulaire du front-end et fait le pont entre les deux.
