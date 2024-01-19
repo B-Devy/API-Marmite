@@ -19,7 +19,8 @@ router.post('/', /*auth,*/ multer, /*async */(req, res, next) => {
     const recette = new Recette({
         ...recetteObj,
         userId: "req.auth.userId",
-        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+        imageUrl: `https://tan-bright-frog.cyclic.app/images/${req.file.filename}`
+        //imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
     });
     console.log(recette)
     
