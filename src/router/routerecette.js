@@ -8,7 +8,7 @@ const multer = require('../middlewares/multer-config')
 //const s3 = new AWS.S3()
 
 //console.log(s3);
-console.log(process.env.BUCKET)
+//console.log(process.env.BUCKET)
 
 router.post('/', /*auth,*/ multer, /*async */(req, res, next) => {
     //-------------------
