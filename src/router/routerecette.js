@@ -4,10 +4,15 @@ const fs = require('fs');
 const Recette = require('../models/recette');
 const auth = require('../middlewares/auth');
 const multer = require('../middlewares/multer-config')
+//const AWS = require("aws-sdk");
+//const s3 = new AWS.S3()
 
+//console.log(s3);
+console.log(process.env.BUCKET)
 
 router.post('/', /*auth,*/ multer, /*async */(req, res, next) => {
     //-------------------
+    //console.log(process.env.BUCKET);
     const recetteObj = JSON.parse(req.body.recette);
     //const recetteObj = req.body;
     //console.log(recetteObj);

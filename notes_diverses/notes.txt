@@ -4,6 +4,8 @@
  module.exports = multer({ storage }).single('image');  //--Très important ! le single('image') designe le name du fromulaire du front-end et fait le pont entre les deux.
 
 https://tan-bright-frog.cyclic.app
+npx aws-sdk-js-codemod -t v2-to-v3 PATH...
+Pour poster des trucs je dois passer par http://localhost:3000/recettes
 
 ------------Email-----------------
 {
