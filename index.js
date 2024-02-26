@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 app.use(express.json());  ///--- fondamentale pour echanger les models sous forme json avec mongodb
 app.use('/recettes', stuffRoutes);
 app.use('/auth', userRoutes);
-app.use('/images', express.static(path.join(__dirname, "images"))); /// a vérifier pour le src
+app.use('/images', express.static(path.join(__dirname, "tmp"))); /// a vérifier pour le src
 let machin = path.join(__dirname, "tmp")
 console.log(machin)
 
