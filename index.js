@@ -27,6 +27,8 @@ app.use(express.json());  ///--- fondamentale pour echanger les models sous form
 app.use('/recettes', stuffRoutes);
 app.use('/auth', userRoutes);
 app.use('/images', express.static(path.join(__dirname, "images"))); /// a vérifier pour le src
+let machin = path.join(__dirname, "tmp")
+console.log(machin)
 
 /*
 app.get('/recettes', (req, res, next) => {
