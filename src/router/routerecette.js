@@ -10,29 +10,37 @@ const multer = require('../middlewares/multer-config')
 //console.log(s3);
 //console.log(process.env.BUCKET)
 
-router.post('/', /*auth,*/ multer, /*async */(req, res, next) => {
+router.post('/', /*auth,*/ multer, /*async*/ (req, res, next) => {  //--multer est important car c'est lui qui va parser le form-data
+    //console.log(req)
     //-------------------
     //console.log(process.env.BUCKET);
-    const recetteObj = JSON.parse(req.body.recette);
+    //const recetteObj = req.body;
+    //const recetteObj = JSON.parse(req.body.recette);
+    const recetteObj = JSON.parse(req.body.data);
     //const recetteObj = req.body;
     //console.log(recetteObj);
     //delete recetteObj._id;
     //delete recetteObj.categorie;
     //console.log(recetteObj);
-
+    console.log(recetteObj)
     
     const recette = new Recette({
         ...recetteObj,
-        userId: "req.auth.userId",
-        imageUrl: `https://tan-bright-frog.cyclic.app/tmp/${req.file.filename}`
+        //userId: "req.auth.userId",
+        imageUrl: `https://app-node-deploie-29c6d531db03.herokuapp.com/images/${req.file.filename}`
+        //imageUrl: `https://tan-bright-frog.cyclic.app/images/${req.file.filename}`
         //imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+
     });
-    console.log(recette)
+
+    console.log(req)
+    
     
 
     recette.save()
         .then(() => { res.status(201).json({message: 'objet enregistré !'}) })
         .catch(error => { res.status(400).json({ error }) })
+
 
 });
 
