@@ -1,0 +1,109 @@
+
+{ 
+    "titre": "Soupe de Potiron",
+    "ingredients": [
+    "1kg de portiron",
+    "500g de carottes",
+    "2x pomme de terre",
+    "1x gousse d'ail",
+    "1x oignon"
+    ],
+    "nbrePers": 4,
+    "temps": 60,
+    "difficulte": "Facile",
+    "cout": "Bon Marché",
+    "categorie": "Entrée",
+    "score": 3,
+    "etape": [
+        "Eplucher et couper en dés le potiron, les pommes de terres, les carottes en rondelles",
+        "Emincer l'ail et l'oignon.",
+        "Faire suer l'oignon dans l'huile d'olive.",
+        "Ajouter tous les légumes et l'ail puis verser le bouillon et le lait.",
+        "Saler, poivrer, muscader et laisser cuire environ une trentaine de minutes",
+        "Mixer le tout, ajouter de la crème et rectifier l'assaisonnement si nécessaire"
+    ]
+}
+
+{
+    "titre": "Brochette de gambas et ananas",
+    "ingredients": [
+        "24x Gambas",
+        "1x Ananas",
+        "20cl d'Huile d'olive",
+        "7cl de Vinaigre de Xérès",
+        "5g de Curry doux",
+        "5g de Moutarde douce",
+        "sel"
+    ],
+    "nbrePers": 6,
+    "temps": 15,
+    "difficulte": "Intermediaire",
+    "cout": "Bon Marché",
+    "categorie": "Plat ",
+    "score": 2,
+    "etape": [
+        "Faire chauffer la plancha",
+        "Décortiquer les gambas en prenant soin de laisser le dernier anneau et la queue. Inciser ensuite le dos afin d'enlever le boyau",
+        "Peler l'ananas et le couper en cubes en veillant à enlever le bois",
+        "Monter les brochettes: piquer la queue de la gamba sur un pic en bois, ajouter une cube d'ananas, piquer ensuite le haut de la gamba, puis remettre un cube d'ananans. Recommmencer",
+        "Disposer les brochettes sur la plancha chaude avec un trait d'huile d'olive et les cuire pendant 30 sec de chaque côté",
+        "Pour la vinaigrette, dans un saladier, réunir le sel, la moutarde, le curry et le vinaigre, mélangez le tout. Verser l'huile et monter la vinaigrette."
+    ]
+}
+
+{
+    "titre": "Cake au thon",
+    "ingredients": [
+        "250g de farine",
+        "4x oeufs",
+        "250gr de thon égouté",
+        "80gr de laniètres de poivrons rouge sauté à la poêle",
+        "50g de gruyère rapé",
+        "10cl d'huile d'olive",
+        "10cl de vin blanc sec",
+        "1x sachet de levure chimique",
+        "2x cuillère de marjolaine ou d'origan",
+        "sel & poivre"
+    ],
+    "nbrePers": 5,
+    "temps": 35,
+    "difficulte": "Facile",
+    "cout": "Bon Marché",
+    "categorie": "Plat principale",
+    "score": 3,
+    "etape": [
+        "Mettre la farine, la levure, le sel et le poivre dans un saladier",
+        "Allumer le four sur 7",
+        "Y casser les oeufs mélanger avec une spatule",
+        "Ajouter le vin, l'huile, le fromage, le thon, la marjolaine ou le persil. Mélanger en soulevant la pâte",
+        "Verser la moitié de la pâte dans un moule à cake beurré et fariné",
+        "disposer les lanières de poivrons préalablement revenus à la poêle",
+        "Recouvrir de pâte",
+        "Cuire pendant 45min. Piquer au couteau, si la pâte ne colle plus, c'est prêt."
+    ]
+}
+
+{
+    "titre": "Omelette japonaise Tamagoyaki",
+    "ingredients": [
+        "3x cuillère à soupe de dashi",
+        "1x cuillière à café de mirin",
+        "1x cuillière à café de sauce soja",
+        "sake , eventuellement",
+        "2x cuillière à café de sucre",
+        "pincée de sel",
+        "3x oeufs"
+    ],
+    "nbrePers": 2,
+    "temps": 25,
+    "difficulte": "Difficile",
+    "cout": "Bon Marché",
+    "categorie": "Entrée",
+    "score": 3,
+    "etape": [
+        "Battre oeufs puis incorporé la mixture. Battre énergiquement.",
+        "Mettre sel et sucre avec le dashi pour qu'il se dissolvent",
+        "Incorporé doucement l'omelette car, si trop épaisse, elle mettra du temps à cuire et le rouleau de base va griller.",
+        "Une bonne louche au départ puis des louchettes pour remplir la pôele."
+    ]
+}
