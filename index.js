@@ -5,7 +5,7 @@ const stuffRoutes = require('./src/router/routerecette');
 const userRoutes = require('./src/router/user');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const path = require('path');
 var bodyParser = require('body-parser')
 
@@ -16,14 +16,15 @@ connectDb()
         console.log(`Le serveur est lancé à http://localhost:${port}`);
     }))
     .catch(err => console.log(err));
-/*
+
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    res.setHeader('Access-Control-Allow-Credentials', true);
     next();
     });
-*/
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());  ///--- fondamentale pour echanger les models sous forme json avec mongodb
 app.use('/recettes', stuffRoutes);
