@@ -8,6 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const path = require('path');
 var bodyParser = require('body-parser')
+var cors = require('cors')
 
 //connectDb().catch(err => console.log(err));
 
@@ -17,6 +18,7 @@ connectDb()
     }))
     .catch(err => console.log(err));
 
+app.use(cors())
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
