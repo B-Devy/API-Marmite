@@ -19,6 +19,7 @@ connectDb()
     .catch(err => console.log(err));
 
 app.use(cors())
+/*
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
@@ -26,7 +27,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
     });
-
+*/
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());  ///--- fondamentale pour echanger les models sous forme json avec mongodb
 app.use('/recettes', stuffRoutes);
