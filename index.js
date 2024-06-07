@@ -5,7 +5,7 @@ const stuffRoutes = require('./src/router/routerecette');
 const userRoutes = require('./src/router/user');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const path = require('path');
 var bodyParser = require('body-parser')
 
